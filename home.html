@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/02bcc4039f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="login" id="lg1">
+        <div class="sgn">Create Account <span class="sgin">already have account?<a class="sgin1" id="sg1"
+                    onclick=" toggleHide1()"><u>Sign in</u> </a> </span> </div>
+        <div class="flname">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+        </div>
+        <div class="epb">
+            <input type="email" placeholder="Email">
+
+        </div>
+        <div class="epb">
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="epb">
+            <input type="password" placeholder="Confirm Password">
+        </div>
+        <div class="epb1">
+            <a>Create Account</a>
+        </div>
+        <div class="sug">
+            Sign up with google
+        </div>
+        <div class="suf">
+            Sign up with facebook
+        </div>
+
+    </div>
+    <div class="login1" id="lg2">
+        <div class="sgn">Sign In <span class="cnc" onclick="toggleHide1()"><i class="far fa-times-circle"></i></span>
+        </div>
+
+        <div class="epb">
+            <input type="email" placeholder="Email">
+
+        </div>
+        <div class="epb">
+            <input type="password" placeholder="Password">
+        </div>
+
+        <div class="epb1">
+            <a>Log In</a>
+        </div>
+        <div class="sug">
+            Sign in with google
+        </div>
+        <div class="suf">
+            Sign in with facebook
+        </div>
+        <div class="fgp">Forgot password?</div>
+
+    </div>
+    <script>
+        function toggleHide() {
+
+            let pr = document.getElementById("bdy");
+            let pr1 = document.getElementById("lg1");
+            if (pr1.style.display != 'block') {
+                pr1.style.display = 'block';
+                pr.style.filter = "opacity(0.7)";
+            }
+            else {
+                pr1.style.display = 'none';
+                pr.style.filter = "opacity(1)";
+            }
+        }
+
+    </script>
+    <script>
+        function toggleHide1() {
+
+            let pr = document.getElementById("bdy");
+            let pr1 = document.getElementById("lg2");
+            let pr2 = document.getElementById("lg1")
+            if (pr1.style.display != 'block') {
+                pr1.style.display = 'block';
+                pr.style.filter = "opacity(0.7)";
+                pr2.style.display = 'none';
+
+
+            }
+            else {
+                pr1.style.display = 'none';
+                pr.style.filter = "opacity(1)";
+            }
+        }
+
+    </script>
+    <div id="bdy">
+        <div class="navbar">
+            <div class="nav1">
+                <a href=""><img src="logo.png" alt="" id="i1"></a>
+            </div>
+            <div class="nav2">
+                <input id="s1" type="search" value="" placeholder="search for your favourite group in ATG">
+            </div>
+            <div class="nav1">
+                <p>Create account.<a onclick="toggleHide()">IT,s free!</a></p>
+            </div>
+        </div>
+        <div class="cover">
+            <img id="i2" src="l2.png" alt="">
+            <div class="eng">
+
+                <h1>Computer Engineering</h1>
+
+            </div>
+        </div>
+        <div class="navbar2">
+            <div class="nav3"></div>
+            <div class="nav4">
+                <a id="n2" href="">All Posts</a>
+                <a id="n2" href="">Article</a>
+                <a id="n2" href="">Event</a>
+                <a id="n2" href="">Education</a>
+                <a id="n2" href="">Job</a>
+            </div>
+            <div class="nav3">
+                <button id="b1">Write a Post</button>
+                <button id="b2"><i class="fas fa-user-plus"></i>Join Group</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="post">
+                <div class="p1">
+                    <div class="pimg">
+                        <img id="i3" src="pngtree-mirror-of-the-sky-png-image_2215329.jpg" alt="">
+                    </div>
+                    <div class="pdes">
+                        <div class="type">
+                            <p>Article</p>
+                        </div>
+                        <div class="head">
+                            <p> <b>What if famous brands had regular fonts? Meet RegularBrands!</b></p>
+                        </div>
+                        <div class="cont">
+                            <p>I,ve worked in ux for the better part of a ddecade. From now on ,I plan to rei...</p>
+                        </div>
+                    </div>
+                    <div class="pacc">
+                        <div class="photo1">
+                            <img src="person3.jpeg" alt="" class="pphoto">
+                            <div class="pphoto1">
+                                <div class="pphoto11"> Sharthak Kamra</div>
+                                <div class="pphoto12"> 1.5k Views </div>
+                            </div>
+                        </div>
+                        <div class="share">
+                            <i class="fas fa-share-alt-square"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="p1">
+                    <div class="pimg">
+                        <img id="i3" src="imagesxx.jpg" alt="">
+                    </div>
+                    <div class="pdes">
+                        <div class="type">
+                            <p>Education</p>
+                        </div>
+                        <div class="head">
+                            <p> <b>Tax Benefits foe Investment under National Pension Scheme Launched by Goverment </b>
+                            </p>
+                        </div>
+                        <div class="cont">
+                            <p>I,ve worked in ux for the better part of a ddecade. From now on ,I plan to rei...</p>
+                        </div>
+                    </div>
+                    <div class="pacc">
+                        <div class="photo1">
+                            <img src="person1.jpeg" alt="" class="pphoto">
+                            <div class="pphoto1">
+                                <div class="pphoto11"> Sarah west</div>
+                                <div class="pphoto12"> 1.4k views </div>
+                            </div>
+                        </div>
+                        <div class="share">
+                            <i class="fas fa-share-alt-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="p1">
+                    <div class="pimg">
+                        <img id="i3" src="car.jpg" alt="">
+                    </div>
+                    <div class="pdes">
+                        <div class="type">
+                            <p>Meetup</p>
+                        </div>
+                        <div class="head">
+                            <p><b>Finance & Investment Elite Social Mixer @Lujiazui</b></p>
+                            <p> Fri, 12 Oct,2018 &nbsp;&nbsp;&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;
+                                Ahemadabad,
+                                india</p>
+                        </div>
+                        <div class="cont">
+                            <div class="temp1">
+                                Visit Website
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pacc">
+                        <div class="photo1">
+                            <img src="person2.jpeg" alt="" class="pphoto">
+                            <div class="pphoto1">
+                                <div class="pphoto11"> Ronal Jones</div>
+                                <div class="pphoto12"> 1.4k views </div>
+                            </div>
+                        </div>
+                        <div class="share">
+                            <i class="fas fa-share-alt-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="p1">
+                    <div class="pimg">
+                        <img id="i3" src="pngtree-mirror-of-the-sky-png-image_2215329.jpg" alt="">
+                    </div>
+                    <div class="pdes">
+                        <div class="type">
+                            <p>job</p>
+                        </div>
+                        <div class="head">
+                            <p><b>Software Devloper </b></p>
+                            <p>Innovation Analytics Private Ltd. &nbsp;&nbsp;&nbsp;<i
+                                    class="fas fa-map-marker-alt"></i>&nbsp; Noida, india</p>
+                        </div>
+                        <div class="cont">
+                            <div class="temp">
+                                Apply on Timesjob
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pacc">
+                        <div class="photo1">
+                            <img src="person 4.jpeg" alt="" class="pphoto">
+                            <div class="pphoto1">
+                                <div class="pphoto11"> Joshep Grey</div>
+                                <div class="pphoto12"> 1.4k views </div>
+                            </div>
+                        </div>
+                        <div class="share">
+                            <i class="fas fa-share-alt-square"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="info">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
